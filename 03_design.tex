@@ -1,0 +1,11 @@
+\section{Proposed Methodology}~\label{sec:design}
+\subsection{Fr´echet/Manhattan coupling distance}
+Let U = u1 up and V = v1 vq represent two trajectories, and L represent the set of all couplings between U and V. Let L L be such that klk is the smallest coupling among the couplings in L for every l L. The average Manhattan norm was used to reflect the real distance between them, and it was believed that the average Manhattan norm approximated the necessary distortion to microaggregate trajectories better.The Frechet/Manhattan distance is a little more involved to calculate than the coupling distance. Nonetheless, Algorithm 1 shows that it can be computed in O(pq) time complexity. We construct a matrix I of size p q where we store the optimal coupling with respect to the Infinite norm given two trajectories U = u1 up and V = v1 vq. We investigate the origins of such ideal couplings with respect to the infinite norm.
+\subsection{A microaggregation-based approach}
+
+The anonymization approach suggested in this article is based on k-microaggregation, which is a method for anonymizing clusters with at least k homogeneous trajectories separately. The number of squared distances is a common homogeneity criterion.The article's suggested anonymization approach is focused on k-microaggregation, which is a mechanism that anonymizes clusters with at least k homogeneous trajectories separately. The number of squared pairwise distances between trajectories within a cluster is a common homogeneity criterion (intra-cluster distance).
+As a result, an optimal microaggregation can be characterised as one that maximises within-group homogeneity.
+\subsubsection{Clustering Technique}
+
+\subsubsection{Obfuscation Technique}
+About the fact that the coupling distance works well for trajectories recorded at various sampling rates, the lower the sampling rate, the more it approaches the classical Frechet distance. To reduce and homogenise the sampling rate of two trajectories, we use linear interpolation.
